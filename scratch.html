@@ -60,15 +60,15 @@
             allowfullscreen>
         </iframe>
     </div>
-</section>
-    
-    <!-- Data Section -->
-    <section id="data">
+    </section>
+
+        <!-- Data Section -->
+        <section id="data">
         <h2>Fun Music Statistics</h2>
         <div class="tableau-container" id="viz1733906212118">
             <noscript>
                 <a href="#">
-                    <img alt='Overview' src='https://public.tableau.com/static/images/Wh/WhatisPlayingonSpotify/Overview/1_rss.png' style='border: none' />
+                    <img alt='Overview' src='https://public.tableau.com/static/images/Wh/WhatisPlayingonSpotify/Overview/1_rss.png' style='border: none;' />
                 </a>
             </noscript>
             <object class="tableauViz" style="display:none;">
@@ -92,20 +92,21 @@
             var divElement = document.getElementById('viz1733906212118');
             var vizElement = divElement.getElementsByTagName('object')[0];
             if (divElement.offsetWidth > 800) {
-                vizElement.style.width = '1300px';
-                vizElement.style.height = '977px';
+                vizElement.style.width = '800px';    /* Match the max-width */
+                vizElement.style.height = '600px';   /* Match the fixed height */
             } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '1300px';
-                vizElement.style.height = '977px';
+                vizElement.style.width = '800px';
+                vizElement.style.height = '600px';
             } else {
                 vizElement.style.width = '100%';
-                vizElement.style.height = '2477px';
+                vizElement.style.height = '600px';   /* Adjust height if needed */
             }
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
     </section>
+
 
     
     <footer>
